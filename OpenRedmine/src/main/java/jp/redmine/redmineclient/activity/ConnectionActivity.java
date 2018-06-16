@@ -83,8 +83,8 @@ public class ConnectionActivity extends TabActivity<DatabaseCacheHelper> {
 								}
 							})
 									.setParam(argIssue)
-									.setName(user.getName())
-									.setIcon(R.drawable.ic_action_user)
+							.setName(getString(R.string.my_issue))
+									.setIcon(R.drawable.ic_action_message)
 					);
 				}
 			}

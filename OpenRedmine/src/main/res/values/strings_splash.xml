@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">OpenRedmine</string>
+	<string name="app_name">GTTNL</string>
 	<string name="app_description"><![CDATA[
-OpenRedmine is an android Redmine client.
+GTTNL APP.
 ]]></string>
 	<string name="product">Product</string>
 	<string name="message_first_time"><![CDATA[Thank you for downloading.
