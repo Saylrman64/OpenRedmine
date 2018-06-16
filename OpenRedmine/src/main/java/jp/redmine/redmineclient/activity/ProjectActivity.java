@@ -51,6 +51,37 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 		}
 
 		List<CorePage> list = new ArrayList<CorePage>();
+
+		// project detail
+		ProjectArgument argProject = new ProjectArgument();
+		argProject.setArgument();
+		argProject.importArgument(intent);
+		list.add((new CorePage<ProjectArgument>() {
+					@Override
+					public Fragment getRawFragment(ProjectArgument param) {
+						return ProjectDetail.newInstance(param);
+					}
+				})
+						.setParam(argProject)
+						.setName(getString(R.string.ticket_project))
+						.setIcon(R.drawable.ic_project)
+		);
+
+             // version
+		ProjectArgument argVersion = new ProjectArgument();
+		argVersion.setArgument();
+		argVersion.importArgument(intent);
+		list.add((new CorePage<ProjectArgument>() {
+					@Override
+					public Fragment getRawFragment(ProjectArgument param) {
+						return VersionList.newInstance(param);
+					}
+				})
+						.setParam(argVersion)
+						.setName(getString(R.string.ticket_version))
+						.setIcon(R.drawable.ic_version)
+		);
+
 		// Project list
 		ProjectArgument argList = new ProjectArgument();
 		argList.setArgument();
@@ -65,6 +96,8 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 				.setName(getString(R.string.ticket_issue))
 				.setIcon(R.drawable.ic_action_message)
 		);
+
+
 
 		// current user
 		RedmineUserModel mUserModel = new RedmineUserModel(getHelper());
@@ -104,51 +137,11 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 		} catch (SQLException e) {
 			Log.e(TAG,"fetchCurrentUser", e);
 		}
-		// project detail
-		ProjectArgument argProject = new ProjectArgument();
-		argProject.setArgument();
-		argProject.importArgument(intent);
-		list.add((new CorePage<ProjectArgument>() {
-					@Override
-					public Fragment getRawFragment(ProjectArgument param) {
-						return ProjectDetail.newInstance(param);
-					}
-				})
-				.setParam(argProject)
-				.setName(getString(R.string.ticket_project))
-				.setIcon(R.drawable.ic_project)
-		);
-
-		// wiki
-		ProjectArgument argWiki = new ProjectArgument();
-		argWiki.setArgument();
-		argWiki.importArgument(intent);
-		list.add((new CorePage<ProjectArgument>() {
-					@Override
-					public Fragment getRawFragment(ProjectArgument param) {
-						return WikiList.newInstance(param);
-					}
-				})
-				.setParam(argWiki)
-				.setName(getString(R.string.wiki))
-				.setIcon(R.drawable.ic_text_fields)
-		);
 
 
-		// version
-		ProjectArgument argVersion = new ProjectArgument();
-		argVersion.setArgument();
-		argVersion.importArgument(intent);
-		list.add((new CorePage<ProjectArgument>() {
-					@Override
-					public Fragment getRawFragment(ProjectArgument param) {
-						return VersionList.newInstance(param);
-					}
-				})
-				.setParam(argVersion)
-				.setName(getString(R.string.ticket_version))
-				.setIcon(R.drawable.ic_version)
-		);
+
+
+
 
 
 		// category
@@ -166,6 +159,21 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 				.setIcon(R.drawable.ic_category)
 		);
 
+		// wiki
+		ProjectArgument argWiki = new ProjectArgument();
+		argWiki.setArgument();
+		argWiki.importArgument(intent);
+		list.add((new CorePage<ProjectArgument>() {
+					@Override
+					public Fragment getRawFragment(ProjectArgument param) {
+						return WikiList.newInstance(param);
+					}
+				})
+						.setParam(argWiki)
+						.setName(getString(R.string.wiki))
+						.setIcon(R.drawable.ic_text_fields)
+		);
+
 		// news
 		ProjectArgument argNews = new ProjectArgument();
 		argNews.setArgument();
@@ -180,6 +188,8 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 				.setName(getString(R.string.news))
 				.setIcon(R.drawable.ic_news)
 		);
+
+
 		return list;
 	}
 
