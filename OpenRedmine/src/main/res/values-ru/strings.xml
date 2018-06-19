@@ -13,6 +13,7 @@
   <string name="menu_setting_edit_authpasswd">Пароль простой аутентификаци</string>
   <string name="name">Имя</string>
   <string name="label_name">Имя метки</string>
+  <string name="my_issue">My Issue</string>
   <string name="save">Сохранить</string>
   <string name="add">Добавить</string>
   <string name="menu_setting_check_auth">Простая аутентификация HTTP</string>

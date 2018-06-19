@@ -14,6 +14,7 @@
   <string name="name">名称</string>
   <string name="label_name">ラベル名</string>
   <string name="save">保存</string>
+  <string name="my_issue">My Issue</string>
   <string name="add">追加</string>
   <string name="menu_setting_check_auth">HTTP ベーシック認証</string>
   <string name="menu_setting_list_menu_title">%1$s :</string>

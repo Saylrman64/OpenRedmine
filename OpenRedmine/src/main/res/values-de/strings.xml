@@ -44,6 +44,7 @@
   <string name="ticket_title">Titel</string>
   <string name="ticket_private">Privat</string>
   <string name="ticket_tracker">Tracker</string>
+  <string name="my_issue">My Issue</string>
   <string name="ticket_status">Status</string>
   <string name="ticket_priority">Priorität</string>
   <string name="ticket_progress">Fortschritt</string>

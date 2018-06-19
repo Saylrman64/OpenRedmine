@@ -55,6 +55,7 @@
 					android:layout_height="36dp"
 					android:tag="^https?://"
 					android:text="http://"
+
 					tools:ignore="HardcodedText"/>
 
 				<Button
@@ -81,7 +82,7 @@
 					android:layout_width="wrap_content"
 					android:layout_height="36dp"
 					android:tag="redmine$"
-					android:text="redmine"
+					android:text="gttnl"
 					tools:ignore="HardcodedText"/>
 
 			</LinearLayout>
@@ -112,6 +113,8 @@
 					android:id="@+id/buttonAccess"
 					android:layout_width="fill_parent"
 					android:layout_height="36dp"
+					android:background="#006ebe"
+					android:textColor="#fff"
 					android:text="@string/menu_setting_goto_redmine"/>
 			</LinearLayout>
 
@@ -251,6 +254,8 @@
 		android:id="@+id/buttonSave"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:background="#006ebe"
+		android:textColor="#fff"
 		android:text="@string/save" />
 
 </LinearLayout>

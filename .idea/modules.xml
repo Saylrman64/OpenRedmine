@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OpenRedmine.iml" filepath="$PROJECT_DIR$/OpenRedmine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/OpenRedmine/OpenRedmine-OpenRedmine.iml" filepath="$PROJECT_DIR$/OpenRedmine/OpenRedmine-OpenRedmine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gttnl.iml" filepath="$PROJECT_DIR$/Gttnl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OpenRedmine/OpenRedmine.iml" filepath="$PROJECT_DIR$/OpenRedmine/OpenRedmine.iml" />
     </modules>
   </component>
 </project>

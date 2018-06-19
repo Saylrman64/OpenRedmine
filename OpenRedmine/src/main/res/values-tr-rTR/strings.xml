@@ -13,6 +13,7 @@
   <string name="label_name">Etiket Adı</string>
   <string name="save">Kaydet</string>
   <string name="add">Ekle</string>
+  <string name="my_issue">My Issue</string>
   <string name="menu_setting_check_auth">HTTP Kimlik Doğrulaması</string>
   <string name="comment">Yorum</string>
   <string name="delete">Sil</string>

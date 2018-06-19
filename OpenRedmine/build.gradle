@@ -1,30 +1,35 @@
 apply plugin: 'com.android.application'
 android {
     //Apply versions
-    def compile_version = System.getenv("ANDROID_COMPILE_SDK_VERSION") ?: "23"
-    def build_tool_version = System.getenv("ANDROID_BUILD_TOOL_VERSION") ?: '25.0.0'
-    def target_sdk_version =System.getenv("ANDROID_TARGET_SDK_VERSION") ?: "23"
-    println "Compile SDK: $compile_version Tool version: $build_tool_version Target version: $target_sdk_version"
+    //def compile_version = System.getenv("ANDROID_COMPILE_SDK_VERSION") ?: "23"
+    //def build_tool_version = System.getenv("ANDROID_BUILD_TOOL_VERSION") ?: '25.0.0'
+    //def target_sdk_version =System.getenv("ANDROID_TARGET_SDK_VERSION") ?: "23"
+    //println "Compile SDK: $compile_version Tool version: $build_tool_version Target version: $target_sdk_version"
 
     //Make version code
-    def version = System.getenv("TRAVIS_TAG") ?: ""
-    if (version == "") {version = "${System.env.TRAVIS_BRANCH}-${System.env.TRAVIS_BUILD_NUMBER}"}
-    else {version = version.replace("v", "")}
-    if (version == "null-null") {version = "dev"}
-    def version_code = System.getenv("TRAVIS_BUILD_NUMBER") ?: "0"
+   // def version = System.getenv("TRAVIS_TAG") ?: ""
+   // if (version == "") {version = "${System.env.TRAVIS_BRANCH}-${System.env.TRAVIS_BUILD_NUMBER}"}
+   // else {version = version.replace("v", "")}
+    //if (version == "null-null") {version = "dev"}
+   // def version_code = System.getenv("TRAVIS_BUILD_NUMBER") ?: "0"
 
-    println "Build version: $version ($version_code)"
+  // println "Build version: $version ($version_code)"
 
-    compileSdkVersion Integer.decode(compile_version)
-    buildToolsVersion build_tool_version
+    //compileSdkVersion Integer.decode(compile_version)
+    //buildToolsVersion build_tool_version
+
+   compileSdkVersion 28
+    buildToolsVersion "28"
     testBuildType "debug"
-    defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion Integer.decode(target_sdk_version)
 
-        versionCode Integer.decode(version_code)
-        versionName version
-        testApplicationId "jp.redmine.redmineclienttest"
+    defaultConfig {
+        minSdkVersion 14
+        //targetSdkVersion Integer.decode(target_sdk_version)
+
+        versionCode 3
+        versionName "1.2"
+        targetSdkVersion 28
+        testApplicationId "jp.redmine.gttnltest"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
         testHandleProfiling true
         testFunctionalTest true
