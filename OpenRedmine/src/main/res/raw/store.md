@@ -1,22 +1,24 @@
 Title
 ===========
-OpenRedmine
+This Is GTTNL
 
 Brief description
 ===========
-OpenRedmine is a Redmine client which is totally free and open-source on GitHub.
+This Is GTTNL is a Redmine client which is totally free and open-source on GitHub.
 
 Description
 ==========
-OpenRedmine is an android Redmine client.
+This Is GTTNL is an android Redmine client which allows GTTNL users to track and manage their business strategy on the go.
+Note: This app has been customized and will not work properly with a standard Redmine implementation.
+
 
 Requirement:
-* Redmine 1.2 later
+* Redmine 3.0 or later
 * API access key (Change from "My Account")
 
 CAUTION:
 * Cache data(downloaded issues) are stored WITHOUT encryption. To remove cache data immediately , open connection list - show menu - remove all cache 
-* This is gamma release, so it is not safe for anything. On Android 2.x, the view would be wrong some times.
+* This is production release, but it is still not completey safe for anything. Protect your phone, tablet, and your data accordingly.
 
 Connection:
 * Allow to connect UNSAFE SSL sites powered by transdroid
@@ -26,10 +28,10 @@ Connection:
 
 Features:
 * View issues offline
-* Filter (Status/Tracker/Category/Priority/Author/Assined)
+* Filter (Status/Tracker/Value Aspect/Author/Assined)
 * Sort (IssueID/Created/Modified/... etc)
 * Show changelogs, relative issues
-* Create or modify issue/timeentry
+* Create or modify issue/time entry
 * Download file related with issues
 * View wiki
 * View news
@@ -39,10 +41,9 @@ Permissions:
 * VIBRATE - notify with vibrate on tap the list item
 
 Reports:
-If you detect the crash, bless us by the report via twitter, github, reviews with 1 star.
+If you detect the crash, please report via twitter, github, or email.
 
 Note:
 * This app is open source(GPL exclude libraries), you can contribute.
 * You can translate your language via https://www.transifex.com/projects/p/openredmine/ . (language: translator names)
-* Notice via https://github.com/indication/OpenRedmine or twitter @OpenRedmine if you feel something good or bad.
-* Beta would be released on https://play.google.com/apps/testing/jp.redmine.redmineclient .
+* Inform us via https://github.com/Saylrman64/This-Is-GTTNL if you have issues or bugs.
