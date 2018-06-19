@@ -22,8 +22,8 @@ Note: Some feature are incomplete or incorrect.
 
 License
 ==========
-See [lisence.md](This-Is-GTTNL/src/main/res/raw/lisence.md)
+See [lisence.md](OpenRedmine/src/main/res/raw/lisence.md)
 
 Contributors and Used references
 ==========
-See [contributors.md](This-Is-GTTNL/OpenRedmine/src/main/res/raw/contributors.md)
+See [contributors.md](OpenRedmine/OpenRedmine/src/main/res/raw/contributors.md)
