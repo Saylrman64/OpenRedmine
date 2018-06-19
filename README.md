@@ -26,4 +26,4 @@ See [lisence.md](OpenRedmine/src/main/res/raw/lisence.md)
 
 Contributors and Used references
 ==========
-See [contributors.md](OpenRedmine/OpenRedmine/src/main/res/raw/contributors.md)
+See [contributors.md](OpenRedmine/src/main/res/raw/contributors.md)
