@@ -1,6 +1,6 @@
 Project
 ==========
-- [Github](https://github.com/indication/OpenRedmine)
+- [Github](https://github.com/Saylrman64/This-Is-GTTNL)
 
 Contributors
 ==========
@@ -9,7 +9,8 @@ Thank you for contribution.
 
 ## Production
 
-- [insink71](https://twitter.com/insink71/statuses/425297982078996480) - Promotion in [redmine wiki](http://www.redmine.org/projects/redmine/wiki/ThirdPartyTools)
+
+- [Vish-was] Porting to new distribution as This Is GTTNL
 - [ironAss](https://github.com/ironAss) - Screen rotation support #88
 
 ## Localization
@@ -48,4 +49,4 @@ Thank you for contribution.
 
 
 [You can join localization team via Transifex.](https://www.transifex.com/indication/openredmine/)
-
+Note: The OpenRedmine project is hte parent project of this app. Cahnges implemented in OpenRedmine will trickel down to this app. Thus, helping OpenRedmine, helps us.
