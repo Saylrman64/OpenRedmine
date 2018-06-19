@@ -10,7 +10,7 @@ Thank you for contribution.
 ## Production
 
 
-- [Vish-was] Porting to new distribution as This Is GTTNL
+- [Vish-was](https://github.com/Vish-was) Porting to new distribution as This Is GTTNL
 - [ironAss](https://github.com/ironAss) - Screen rotation support #88
 
 ## Localization
