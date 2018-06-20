@@ -1,4 +1,4 @@
-OpenRedmine
+This Is GTTNL v3.21.1
 ===========
 Release history
 
