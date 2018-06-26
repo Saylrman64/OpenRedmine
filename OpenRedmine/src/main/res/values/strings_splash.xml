@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
 	<string name="app_name">This Is GTTNL</string>
+=======
+	<string name="app_name">GTTNL</string>
+>>>>>>> 7711649d9412ca68be3969fb8810f16feae82793
 	<string name="app_description"><![CDATA[
 GTTNL APP.
 ]]></string>

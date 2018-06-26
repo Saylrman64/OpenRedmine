@@ -30,7 +30,11 @@ public class ConnectionForm extends FormHelper {
 	public RadioGroup radioTextType;
 
 	public Button buttonAccess;
+<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/fragment/form/ConnectionForm.java
 	//public Button buttonUrl1;
+=======
+	public Button buttonUrl1;
+>>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/fragment/form/ConnectionForm.java
 	public Button buttonUrl2;
 	public Button buttonUrl3;
 	public Button buttonUrl4;
@@ -55,7 +59,11 @@ public class ConnectionForm extends FormHelper {
 		editCertKey = (EditText)activity.findViewById(R.id.editCertKey);
 		radioTextType = (RadioGroup) activity.findViewById(R.id.radioGroupTextType);
 
+<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/fragment/form/ConnectionForm.java
 	//	buttonUrl1 = (Button)activity.findViewById(R.id.buttonUrl1);
+=======
+		buttonUrl1 = (Button)activity.findViewById(R.id.buttonUrl1);
+>>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/fragment/form/ConnectionForm.java
 		buttonUrl2 = (Button)activity.findViewById(R.id.buttonUrl2);
 		buttonUrl3 = (Button)activity.findViewById(R.id.buttonUrl3);
 		buttonUrl4 = (Button)activity.findViewById(R.id.buttonUrl4);
@@ -87,7 +95,11 @@ public class ConnectionForm extends FormHelper {
 				editUrl.requestFocusFromTouch();
 			}
 		};
+<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/fragment/form/ConnectionForm.java
 		//buttonUrl1.setOnClickListener(onClick1);
+=======
+		buttonUrl1.setOnClickListener(onClick1);
+>>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/fragment/form/ConnectionForm.java
 		buttonUrl2.setOnClickListener(onClick1);
 		buttonUrl3.setOnClickListener(onClick1);
 		buttonUrl4.setOnClickListener(onClick1);

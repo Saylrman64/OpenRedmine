@@ -84,7 +84,11 @@ public class IssueActivity extends TabActivity<DatabaseCacheHelper>
 					})
 							.setParam(argList)
 							.setName(getString(R.string.ticket_issue))
+<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/IssueActivity.java
 							.setIcon(R.drawable.ic_tag)
+=======
+							.setIcon(R.drawable.ic_issue)
+>>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/IssueActivity.java
 			);
 			// Watchers
 			IssueArgument argWatchers = new IssueArgument();

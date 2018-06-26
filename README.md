@@ -1,27 +1,24 @@
-OpenRedmine
+This Is GTTNL
 ===========
 
-[![Join the chat at https://gitter.im/OpenRedmine/Lobby](https://badges.gitter.im/OpenRedmine/Lobby.svg)](https://gitter.im/OpenRedmine/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+This Is GTTNL is an android Redmine client. This project is open source.
 
-OpenRedmine is an android Redmine client. This project is open source.
-
-<a href="https://f-droid.org/repository/browse/?fdid=jp.redmine.redmineclient" target="_blank"><img src="https://f-droid.org/badge/get-it-on.png" height="90"/></a>
-<a href="https://play.google.com/store/apps/details?id=jp.redmine.redmineclient" target="_blank">
+<a href="https://play.google.com/store/apps/details?id=jp.redmine.gttnl" target="_blank">
 <img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="90"/></a>
 
 Features
 ==========
 * Allow to connect UNSAFE SSL sites powered by transdroid
-* View issues offline
+* View Issues offline
 * Get API key from web site
-* Filter (Status/Tracker/Category/Priority)
+* Filter (Status/Tracker/Value Aspect/Priority)
 * Download file
 * Wiki
 
 Version
 ==========
-Current commit is alpha version.
-Some feature is not complete or incorrect.
+Current commit is production version.
+Note: Some feature are incomplete or incorrect.
 
 License
 ==========

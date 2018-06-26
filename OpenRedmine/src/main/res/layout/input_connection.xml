@@ -49,7 +49,19 @@
 					android:text="@string/menu_setting_label_accessurl"
 					android:textAppearance="?android:attr/textAppearanceMedium" />
 
+<<<<<<< HEAD
 
+=======
+				<Button
+					android:id="@+id/buttonUrl1"
+					style="?android:attr/buttonStyleSmall"
+					android:layout_width="wrap_content"
+					android:layout_height="36dp"
+					android:tag="^https?://"
+					android:text="http://"
+
+					tools:ignore="HardcodedText"/>
+>>>>>>> 7711649d9412ca68be3969fb8810f16feae82793
 
 				<Button
 					android:id="@+id/buttonUrl2"

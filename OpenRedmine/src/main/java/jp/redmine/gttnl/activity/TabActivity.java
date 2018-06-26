@@ -1,16 +1,11 @@
 package jp.redmine.gttnl.activity;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
-import android.support.v7.widget.Toolbar;
-import android.widget.LinearLayout;
 
 import com.j256.ormlite.android.apptools.OrmLiteFragmentActivity;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
@@ -33,10 +28,6 @@ import jp.redmine.gttnl.activity.pager.CorePage;
 import jp.redmine.gttnl.activity.pager.CorePager;
 import jp.redmine.gttnl.fragment.ActivityInterface;
 
-import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
-import static android.widget.ListPopupWindow.WRAP_CONTENT;
-import static jp.redmine.gttnl.R.id.pager;
-
 abstract class TabActivity<T extends OrmLiteSqliteOpenHelper> extends OrmLiteFragmentActivity<T>
 	implements ActivityInterface {
 	abstract protected List<CorePage> getTabs();
@@ -44,129 +35,59 @@ abstract class TabActivity<T extends OrmLiteSqliteOpenHelper> extends OrmLiteFra
 		super();
 	}
 
-	//private Toolbar toolbar;
-	//private TabLayout tabLayout;
-	//private ViewPager viewPager;
-
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		ActivityHelper.setupTheme(this);
 		super.onCreate(savedInstanceState);
-
-		//Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-		//setSupportActionBar(toolbar);
-
-		//getSupportActionBar().setTitle("Tis Is GTTNL");
-
-
 		final ActionBar actionBar = getSupportActionBar();
 		setContentView(R.layout.page_fragment_pager);
 
 		List<CorePage> list = getTabs();
 
-		//toolbar = (Toolbar) findViewById(R.id.toolbar);
-		//setSupportActionBar(toolbar);
-		//getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
-
-
-		//viewPager = (ViewPager) findViewById(R.id.mPager);
-		//setupViewPager(mPager);
-
-		//tabLayout = (TabLayout) findViewById(R.id.tabs);
-		//tabLayout.setupWithViewPager(viewPager);
-
-		TabLayout   tabLayout = (TabLayout) findViewById(R.id.simpleTabLayout);
-		//setSupportActionBar(toolbar);
-
-
-//		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-		//actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-		//actionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.parseColor("#1fa0e3")));
 		actionBar.setDisplayShowTitleEnabled(true);
-		actionBar.setDisplayShowHomeEnabled(true);
-		actionBar.setLogo(R.drawable.ic_logo2);
-		actionBar.setDisplayUseLogoEnabled(true);
-		//actionBar.setDisplayHomeAsUpEnabled(true);
 
-		final ViewPager mPager = (ViewPager) findViewById(pager);
-		//final ViewPager view_pager = (ViewPager) findViewById(R.id.pager);
-		//final ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
-		//mPager.setAdapter(adapter);
-		mPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-
-
-
+		final ViewPager mPager = (ViewPager) findViewById(R.id.pager);
 
 		/** Defining a listener for pageChange */
-		/*ViewPager.SimpleOnPageChangeListener pageChangeListener = new ViewPager.SimpleOnPageChangeListener(){
+		ViewPager.SimpleOnPageChangeListener pageChangeListener = new ViewPager.SimpleOnPageChangeListener(){
 			@Override
 			public void onPageSelected(int position) {
 				super.onPageSelected(position);
-				TabLayout.setSelectedNavigationItem(position);
+				actionBar.setSelectedNavigationItem(position);
 			}
-		};*/
+		};
 
 		/** Setting the pageChange listner to the viewPager */
-		//mPager.setOnPageChangeListener(pageChangeListener);
-
+		mPager.setOnPageChangeListener(pageChangeListener);
 		mPager.setAdapter(new CorePager(getSupportFragmentManager(), list));
 
-
-
-
-
-		tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+		ActionBar.TabListener listener = new ActionBar.TabListener() {
 			@Override
-			public void onTabSelected(TabLayout.Tab tab) {
-// called when tab selected
+			public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
 				mPager.setCurrentItem(tab.getPosition());
 			}
 
 			@Override
-			public void onTabUnselected(TabLayout.Tab tab) {
-// called when tab unselected
+			public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
 			}
 
 			@Override
-			public void onTabReselected(TabLayout.Tab tab) {
-// called when a tab is reselected
+			public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+
 			}
-		});
-
-	//	TabLayout.TabListener listener = new TabLayout.TabListener() {
-		//	@Override
-		//	public void onTabSelected(TabLayout.Tab tab, FragmentTransaction fragmentTransaction) {
-		//		mPager.setCurrentItem(tab.getPosition());
-		//	}
-
-		//	@Override
-		//	public void onTabUnselected(TabLayout.Tab tab, FragmentTransaction fragmentTransaction) {
-
-		//	}
-
-		//	@Override
-			//public void onTabReselected(TabLayout.Tab tab, FragmentTransaction fragmentTransaction) {
-
-			//}
-	//	};
-
-
-
+		};
 
 		for(CorePage item : list){
-
-			TabLayout.Tab tab = tabLayout.newTab();
-			//ActionBar.Tab tab = actionBar.newTab();
+			ActionBar.Tab tab = actionBar.newTab();
 			tab.setText(item.getName());
-			//tab.setTabListener(listener);
-
+			tab.setTabListener(listener);
 			if (item.getIcon() != null)
 				tab.setIcon(item.getIcon());
-
-			tabLayout.addTab(tab, item.isDefault());
+			actionBar.addTab(tab, item.isDefault());
 		}
 
 	}
