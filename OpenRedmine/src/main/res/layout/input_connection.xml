@@ -20,7 +20,8 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:text="@string/label_name"
-				android:textAppearance="?android:attr/textAppearanceMedium" />
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:id="@+id/textView4" />
 
 			<com.andreabaccega.widget.FormEditText
 				android:id="@+id/editName"
@@ -38,7 +39,7 @@
 
 			<LinearLayout
 				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"
+				android:layout_height="34dp"
 				android:layout_marginTop="20dp"
 				android:orientation="horizontal" >
 
@@ -48,14 +49,7 @@
 					android:text="@string/menu_setting_label_accessurl"
 					android:textAppearance="?android:attr/textAppearanceMedium" />
 
-				<Button
-					android:id="@+id/buttonUrl1"
-					style="?android:attr/buttonStyleSmall"
-					android:layout_width="wrap_content"
-					android:layout_height="36dp"
-					android:tag="^https?://"
-					android:text="http://"
-					tools:ignore="HardcodedText"/>
+
 
 				<Button
 					android:id="@+id/buttonUrl2"
@@ -81,7 +75,7 @@
 					android:layout_width="wrap_content"
 					android:layout_height="36dp"
 					android:tag="redmine$"
-					android:text="redmine"
+					android:text="gttnl"
 					tools:ignore="HardcodedText"/>
 
 			</LinearLayout>
@@ -112,6 +106,8 @@
 					android:id="@+id/buttonAccess"
 					android:layout_width="fill_parent"
 					android:layout_height="36dp"
+					android:background="#006ebe"
+					android:textColor="#fff"
 					android:text="@string/menu_setting_goto_redmine"/>
 			</LinearLayout>
 
@@ -251,6 +247,8 @@
 		android:id="@+id/buttonSave"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:background="#006ebe"
+		android:textColor="#fff"
 		android:text="@string/save" />
 
 </LinearLayout>

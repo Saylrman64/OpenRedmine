@@ -68,7 +68,7 @@
 				android:text="2013-01-01"
 				tools:ignore="HardcodedText" />
 		</TableRow>
-
+download
 		<TableRow
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
 		</TableRow>
 
 	</TableLayout>
-	
+
 	<Button
 		android:id="@+id/buttonDownload"
 		android:layout_width="match_parent"

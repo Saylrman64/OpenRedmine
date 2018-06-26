@@ -15,18 +15,16 @@
 		android:layout_centerVertical="true"
 		android:contentDescription="@string/ticket_relations"
 		android:src="@drawable/ic_project"/>
+
 	<TextView
 		android:id="@+id/name"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
-		android:layout_marginBottom="10dp"
-		android:layout_marginRight="10dp"
-		android:layout_marginEnd="10dp"
-		android:layout_marginTop="10dp"
 		android:text="Project Name"
+		android:textColor="#006ebe"
 		tools:ignore="HardcodedText"
 		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_alignTop="@+id/icon"
 		android:layout_toRightOf="@+id/icon"
-		android:layout_toEndOf="@+id/icon"
-		android:layout_centerVertical="true"/>
+		android:layout_toEndOf="@+id/icon" />
 </RelativeLayout>

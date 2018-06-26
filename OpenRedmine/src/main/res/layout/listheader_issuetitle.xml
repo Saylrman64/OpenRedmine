@@ -4,6 +4,7 @@
 	android:id="@+id/textTitle"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
+	android:textColor="#006ebe"
 	android:layout_marginLeft="3dip"
 	android:text="Title"
 	android:textAppearance="?android:attr/textAppearanceLarge"

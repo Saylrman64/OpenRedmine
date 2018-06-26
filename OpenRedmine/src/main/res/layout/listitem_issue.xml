@@ -4,7 +4,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:padding="5dp">
+	android:padding="16dp">
 
 	<TextView
 		android:id="@+id/textModified"
@@ -154,6 +154,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:maxLines="1"
+		android:textColor="#006ebe"
 		android:text="Title is very long long to display"
 		android:textAppearance="?android:attr/textAppearanceLarge"
 		tools:ignore="HardcodedText"

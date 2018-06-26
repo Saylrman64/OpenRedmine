@@ -12,6 +12,7 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_marginLeft="5dp"
+		android:textColor="#006ebe"
 	    android:singleLine="true"
 	    android:text="Title is very long long to display"
 	    android:textAppearance="?android:attr/textAppearanceLarge"

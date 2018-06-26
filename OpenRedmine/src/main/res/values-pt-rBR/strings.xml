@@ -12,6 +12,7 @@
   <string name="menu_setting_label_authpasswd">Senha</string>
   <string name="menu_setting_edit_authpasswd">Senha do Authcation Básico</string>
   <string name="name">Nom</string>
+  <string name="my_issue">My Issue</string>
   <string name="label_name">Nome do Rótulo</string>
   <string name="save">Salvar</string>
   <string name="add">Adicionar</string>

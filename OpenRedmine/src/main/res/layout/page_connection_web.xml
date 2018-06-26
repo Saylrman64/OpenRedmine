@@ -2,4 +2,5 @@
 <WebView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:id="@+id/webView"
 	android:layout_width="fill_parent"
+	android:textColor="#006ebe"
 	android:layout_height="fill_parent" />
