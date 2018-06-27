@@ -4,15 +4,23 @@ Release history
 
 TODO
 ===========
-- Check date to update bug (#83)
-- Add share button on issue (#18)
 
-Next Release
+
+Next Release Anticipated from GTTNL
+===========
+- Enhanced GUI for Issues viewing and Editing
+- User Picture in Issues
+
+Next Release Anticipated from OpenRedmine
 ===========
 - Update icons and Show title on issue or wiki (#207)
 - Markdown support
-- Update Portuguese(BR) translation by etcho
-- Update Russian translation by roman.yagodin
+
+
+v3.21.1 - 56 - 2017/07/28
+===========
+- Re-branded for GTTNL
+- Update icons to use Fontawesome
 
 v3.21 - 56 - 2017/07/28
 ===========
