@@ -6,10 +6,7 @@ import android.widget.TextView;
 
 import java.sql.SQLException;
 
-<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/adapter/VersionListAdapter.java
 import jp.redmine.gttnl.R;
-=======
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/adapter/VersionListAdapter.java
 import jp.redmine.gttnl.db.cache.DatabaseCacheHelper;
 import jp.redmine.gttnl.db.cache.RedmineVersionModel;
 import jp.redmine.gttnl.entity.RedmineProjectVersion;

@@ -65,11 +65,7 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 				})
 						.setParam(argProject)
 						.setName(getString(R.string.ticket_project))
-<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 						.setIcon(R.drawable.ic_clipboard_list)
-=======
-						.setIcon(R.drawable.ic_project)
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 		);
 
              // version
@@ -84,7 +80,6 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 				})
 						.setParam(argVersion)
 						.setName(getString(R.string.ticket_version))
-<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 						.setIcon(R.drawable.ic_react)
 		);
 
@@ -101,9 +96,6 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 						.setParam(argCategory)
 						.setName(getString(R.string.ticket_category))
 						.setIcon(R.drawable.ic_category)
-=======
-						.setIcon(R.drawable.ic_version)
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 		);
 
 		// Project list
@@ -118,11 +110,7 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 				})
 				.setParam(argList)
 				.setName(getString(R.string.ticket_issue))
-<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 				.setIcon(R.drawable.ic_tag)
-=======
-				.setIcon(R.drawable.ic_issue)
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 		);
 
 
@@ -165,7 +153,6 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 		} catch (SQLException e) {
 			Log.e(TAG,"fetchCurrentUser", e);
 		}
-<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
 
 
 
@@ -188,43 +175,6 @@ public class ProjectActivity extends TabActivity<DatabaseCacheHelper>
 						.setParam(argWiki)
 						.setName(getString(R.string.wiki))
 						.setIcon(R.drawable.ic_book_open)
-=======
-
-
-
-
-
-
-
-		// category
-		ProjectArgument argCategory = new ProjectArgument();
-		argCategory.setArgument();
-		argCategory.importArgument(intent);
-		list.add((new CorePage<ProjectArgument>() {
-					@Override
-					public Fragment getRawFragment(ProjectArgument param) {
-						return CategoryList.newInstance(param);
-					}
-				})
-				.setParam(argCategory)
-				.setName(getString(R.string.ticket_category))
-				.setIcon(R.drawable.ic_category)
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ProjectActivity.java
-		);
-
-		// wiki
-		ProjectArgument argWiki = new ProjectArgument();
-		argWiki.setArgument();
-		argWiki.importArgument(intent);
-		list.add((new CorePage<ProjectArgument>() {
-					@Override
-					public Fragment getRawFragment(ProjectArgument param) {
-						return WikiList.newInstance(param);
-					}
-				})
-						.setParam(argWiki)
-						.setName(getString(R.string.wiki))
-						.setIcon(R.drawable.ic_text_fields)
 		);
 
 		// news

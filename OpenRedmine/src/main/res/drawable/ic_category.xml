@@ -1,4 +1,14 @@
-<vector android:height="16dp" android:viewportHeight="512.0"
-    android:viewportWidth="640.0" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+<vector android:height="24dp" android:viewportHeight="512.0"
+    android:viewportWidth="512.0" android:width="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:scaleX="0.6"
+        android:scaleY="0.6"
+        android:pivotX="50"
+        android:pivotY="260">
+
     <path android:fillColor="#f8f8f8" android:pathData="M128,352L32,352c-17.7,0 -32,14.3 -32,32v96c0,17.7 14.3,32 32,32h96c17.7,0 32,-14.3 32,-32v-96c0,-17.7 -14.3,-32 -32,-32zM104,272h192v48h48v-48h192v48h48v-57.6c0,-21.2 -17.2,-38.4 -38.4,-38.4L344,224v-64h40c17.7,0 32,-14.3 32,-32L416,32c0,-17.7 -14.3,-32 -32,-32L256,0c-17.7,0 -32,14.3 -32,32v96c0,17.7 14.3,32 32,32h40v64L94.4,224C73.2,224 56,241.2 56,262.4L56,320h48v-48zM368,352h-96c-17.7,0 -32,14.3 -32,32v96c0,17.7 14.3,32 32,32h96c17.7,0 32,-14.3 32,-32v-96c0,-17.7 -14.3,-32 -32,-32zM608,352h-96c-17.7,0 -32,14.3 -32,32v96c0,17.7 14.3,32 32,32h96c17.7,0 32,-14.3 32,-32v-96c0,-17.7 -14.3,-32 -32,-32z"/>
+
+</group>
 </vector>

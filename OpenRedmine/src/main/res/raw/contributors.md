@@ -49,8 +49,4 @@ Thank you for contribution.
 
 
 [You can join localization team via Transifex.](https://www.transifex.com/indication/openredmine/)
-<<<<<<< HEAD
 Note: The OpenRedmine project is hte parent project of this app. Cahnges implemented in OpenRedmine will trickel down to this app. Thus, helping OpenRedmine, helps us.
-=======
-Note: The OpenRedmine project is hte parent project of this app. Cahnges implemented in OpenRedmine will trickel down to this app. Thus, helping OpenRedmine, helps us.
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793

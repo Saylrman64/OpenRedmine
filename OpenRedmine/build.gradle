@@ -26,13 +26,8 @@ android {
         minSdkVersion 14
         //targetSdkVersion Integer.decode(target_sdk_version)
 
-<<<<<<< HEAD
-        versionCode 1
+        versionCode 4
         versionName "3.21"
-=======
-        versionCode 3
-        versionName "1.2"
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793
         targetSdkVersion 28
         testApplicationId "jp.redmine.gttnltest"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"

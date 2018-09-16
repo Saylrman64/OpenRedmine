@@ -8,17 +8,11 @@
 		<item name="colorPrimary">@color/colorPrimary</item>
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
 		<item name="colorAccent">@color/colorAccent</item>
-<<<<<<< HEAD
 
 	</style>
 
 
 
-=======
-	</style>
-
-
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793
 </resources>
 
 

@@ -8,13 +8,8 @@ This Is GTTNL is a Redmine client which is totally free and open-source on GitHu
 
 Description
 ==========
-<<<<<<< HEAD
 This Is GTTNL is an android Redmine client which allows GTTNL users to track and manage their business strategy on the go. Note: This app has been customized and will not work properly with a standard Redmine implementation.
 
-=======
-This Is GTTNL is an android Redmine client which allows GTTNL users to track and manage their business strategy on the go.
-Note: This app has been customized and will not work properly with a standard Redmine implementation.
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793
 
 
 Requirement:
@@ -33,10 +28,10 @@ Connection:
 
 Features:
 * View issues offline
-* Filter (Status/Tracker/Value Aspect/Author/Assined)
+* Filter (Status/Tracker/Category/Priority/Author/Assined)
 * Sort (IssueID/Created/Modified/... etc)
 * Show changelogs, relative issues
-* Create or modify issue/time entry
+* Create or modify issue/timeentry
 * Download file related with issues
 * View wiki
 * View news

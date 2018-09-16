@@ -5,10 +5,7 @@
 		  android:layout_width="fill_parent"
 		  android:layout_height="wrap_content"
 		  android:layout_gravity="fill_vertical"
-<<<<<<< HEAD
 	      android:textColor="#006ebe"
-=======
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793
 		  android:drawableLeft="@drawable/ic_add_connection"
 		  android:drawablePadding="5dp"
 		  android:padding="10dp"

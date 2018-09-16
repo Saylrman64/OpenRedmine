@@ -28,20 +28,12 @@ public class ConnectionListActivity extends TabActivity<DatabaseCacheHelper>
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-<<<<<<< HEAD:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ConnectionListActivity.java
 
 
 		if(getSupportActionBar()!=null) {
 			ActionBar actionBar = getSupportActionBar();
 			actionBar.setTitle(R.string.title_home);
 
-=======
-		if(getSupportActionBar()!=null) {
-			ActionBar actionBar = getSupportActionBar();
-			actionBar.setTitle(R.string.title_home);
-			actionBar.setIcon(R.drawable.ic_logo);
-			actionBar.setDisplayShowHomeEnabled(true);
->>>>>>> 7711649d9412ca68be3969fb8810f16feae82793:OpenRedmine/src/main/java/jp/redmine/gttnl/activity/ConnectionListActivity.java
 		}
 
 	}

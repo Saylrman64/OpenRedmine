@@ -133,11 +133,12 @@
   <string name="remote_saved">Has been saved to remote</string>
   <string name="input_error_invalid_decimal">Input valid number.</string>
   <string name="input_error_select">Select %1$s</string>
-  <string name="title_home">Home</string>
-  <string name="title_category">Category %1$s</string>
-  <string name="title_version">Version %1$s</string>
+  <string name="title_home">This Is GTTNL</string>
+  <string name="title_category">Value Aspect %1$s</string>
+  <string name="title_version">Initiative %1$s</string>
   <string name="text_type">Text format</string>
   <string name="text_type_textile">Textile</string>
   <string name="text_type_markdown">Markdown</string>
   <string name="text_type_none">None</string>
+  <string name="info">jb.redmine.gttnl v3.21.1</string>
 </resources>

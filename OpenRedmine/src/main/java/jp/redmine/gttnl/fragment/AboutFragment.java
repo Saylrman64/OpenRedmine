@@ -18,9 +18,9 @@ public class AboutFragment extends Fragment {
 		View view = inflater.inflate(R.layout.page_splash, container, false);
 		TextView text = (TextView)view.findViewById(R.id.footer);
 		if (text != null)
-			text.setText(getString(R.string.footer_version,
-					BuildConfig.APPLICATION_ID, BuildConfig.VERSION_NAME,
-					BuildConfig.VERSION_CODE, BuildConfig.BUILD_TYPE
+			text.setText(getString(R.string.info
+					//BuildConfig.APPLICATION_ID, BuildConfig.VERSION_NAME,
+					//BuildConfig.VERSION_CODE, BuildConfig.BUILD_TYPE
 			));
 		return view;
 	}
