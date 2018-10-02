@@ -52,7 +52,7 @@ public class AboutActivity extends TabActivity<DatabaseCacheHelper>
 		intent.setResource(R.raw.version);
 		list.add((new PageMarkdown()).setParam(intent)
 						.setName(getString(R.string.ticket_version))
-						.setIcon(R.drawable.ic_history)
+						.setIcon(R.drawable.ic_category)
 		);
 
 		intent = new ResourceArgument();

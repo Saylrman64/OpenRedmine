@@ -1,7 +1,14 @@
 package jp.redmine.gttnl.fragment;
 
+import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -23,8 +30,14 @@ import jp.redmine.gttnl.param.ProjectArgument;
 public class CategoryList extends OrmLiteListFragment<DatabaseCacheHelper> {
 	private static final String TAG = CategoryList.class.getSimpleName();
 	private CategoryListAdapter adapter;
-
+	private MenuItem menu_refresh;
 	private IssueActionInterface mListener;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setHasOptionsMenu(true);
+	}
 
 	public CategoryList(){
 		super();
@@ -64,6 +77,8 @@ public class CategoryList extends OrmLiteListFragment<DatabaseCacheHelper> {
 			adapter.notifyDataSetChanged();
 	}
 
+
+
 	@Override
 	public void onListItemClick(ListView listView, View v, int position, long id) {
 		super.onListItemClick(listView, v, position, id);
@@ -93,4 +108,34 @@ public class CategoryList extends OrmLiteListFragment<DatabaseCacheHelper> {
 		}
 	}
 
+
+	public void onRefresh(){
+		FragmentTransaction ft = getFragmentManager().beginTransaction();
+		ft.detach(this).attach(this).commit();
+
+	}
+
+	@Override
+	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+		super.onCreateOptionsMenu(menu, inflater);
+		inflater.inflate(R.menu.refresh, menu);
+		menu_refresh = menu.findItem(R.id.menu_refresh);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch ( item.getItemId() )
+		{
+			case R.id.menu_refresh:
+			{
+				this.onRefresh();
+				return true;
+			}
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
 }
+
+

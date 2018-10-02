@@ -384,10 +384,7 @@ public class IssueList extends OrmLiteListFragment<DatabaseCacheHelper> implemen
 				intent.setIntent(getActivity().getApplicationContext(), WebViewActivity.class);
 				intent.importArgument(input);
 
-				intent.setUrl("/projects/"
-						+ ((project == null || project.getName() == null) ? "" : project.getName())
-						+ "/issues"
-				);
+				intent.setUrl("/issues");
 				getActivity().startActivity(intent.getIntent());
 				return true;
 			}

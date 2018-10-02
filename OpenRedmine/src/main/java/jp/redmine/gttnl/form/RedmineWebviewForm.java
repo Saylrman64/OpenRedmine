@@ -40,6 +40,7 @@ public class RedmineWebviewForm extends FormHelper {
 		//Setup security settings with caution
 		setting.setGeolocationEnabled(false);
 		setting.setJavaScriptEnabled(true);
+		setting.setLoadsImagesAutomatically(true);
 		//Assets and resources are still accessible using file:///android_asset and file:///android_res
 		setting.setAllowFileAccess(false);
 

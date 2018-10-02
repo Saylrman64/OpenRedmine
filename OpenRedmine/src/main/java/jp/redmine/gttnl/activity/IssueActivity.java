@@ -98,7 +98,7 @@ public class IssueActivity extends TabActivity<DatabaseCacheHelper>
 					})
 					.setParam(argWatchers)
 					.setName(getString(R.string.ticket_watcher))
-					.setIcon(R.drawable.ic_supervisor_account)
+					.setIcon(R.drawable.ic_watchers)
 			);
 		}
 		if(isValidIssue && isEditable){
@@ -114,7 +114,7 @@ public class IssueActivity extends TabActivity<DatabaseCacheHelper>
 				})
 				.setParam(argTimeentry)
 				.setName(getString(R.string.ticket_time))
-				.setIcon(R.drawable.ic_recent)
+				.setIcon(R.drawable.ic_time)
 			);
 		}
 
