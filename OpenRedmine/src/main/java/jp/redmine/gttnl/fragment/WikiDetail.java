@@ -220,7 +220,7 @@ public class WikiDetail extends OrmLiteFragment<DatabaseCacheHelper> implements 
 				WebArgument intent = new WebArgument();
 				intent.setIntent(getActivity().getApplicationContext(), WebViewActivity.class);
 				intent.importArgument(input);
-				intent.setUrl("/wiki/"
+				intent.setUrl("/projects/gttnl-app/wiki/"
 						+ ((wiki == null || wiki.getTitle() == null) ? "" :wiki.getTitle())
 						+ ""
 				);

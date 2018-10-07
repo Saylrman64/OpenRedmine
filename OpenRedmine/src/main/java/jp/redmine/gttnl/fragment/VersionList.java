@@ -77,6 +77,8 @@ public class VersionList extends OrmLiteListFragment<DatabaseCacheHelper> {
 		RedmineProjectVersion item = (RedmineProjectVersion) listitem;
 
 		RedmineFilter filter = new RedmineFilter();
+
+
 		filter.setName(getString(R.string.title_version, item.getName()));
 		filter.setConnectionId(item.getConnectionId());
 		filter.setProject(item.getProject());

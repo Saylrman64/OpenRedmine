@@ -75,7 +75,7 @@
 					android:layout_width="wrap_content"
 					android:layout_height="36dp"
 					android:tag="redmine$"
-					android:text="gttnl"
+					android:text="gttnl.com"
 					tools:ignore="HardcodedText"/>
 
 			</LinearLayout>
